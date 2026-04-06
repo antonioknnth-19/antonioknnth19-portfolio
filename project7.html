@@ -1,0 +1,73 @@
+
+Giya
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+        }
+        .map-container {
+            text-align: center;
+        }
+        h2 {
+            color: #2a5298;
+            margin-bottom: 1rem;
+        }
+        img {
+            border: 3px solid #2a5298;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="map-container">
+        <h2>Click on the image below 👇</h2>
+
+        <img src="map.jpg" 
+             alt="Workplace" 
+             usemap="#workmap" 
+             width="600" 
+             height="300">
+
+        <map name="workmap">
+            <!-- Area 1: Top Left -->
+            <area shape="rect" 
+                  coords="0,0,200,150" 
+                  alt="About Me" 
+                  href="#about" 
+                  title="Go to About Me">
+
+            <!-- Area 2: Top Right -->
+            <area shape="rect" 
+                  coords="400,0,600,150" 
+                  alt="Work Immersion" 
+                  href="#immersion" 
+                  title="Go to Work Immersion">
+
+            <!-- Area 3: Bottom Center (Circle) -->
+            <area shape="circle" 
+                  coords="300,200,70" 
+                  alt="Skills" 
+                  href="#skills" 
+                  title="Go to Skills">
+
+            <!-- Area 4: Whole Bottom -->
+            <area shape="rect" 
+                  coords="0,150,600,300" 
+                  alt="Contact" 
+                  href="#contact" 
+                  title="Go to Contact">
+        </map>
+    </div>
+
+</body>
+</html>
